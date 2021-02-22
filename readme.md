@@ -76,7 +76,7 @@ Verkefni sett fyrir á Canvas sunnudaginn 14. febrúar 2021.
 
 Skila skal í Canvas í seinasta lagi fyrir lok dags laugardaginn 27. febrúar 2021.
 
-Skilaboð skulu innihalda slóð á GitHub repo fyrir verkefni, og dæmatímakennurum skal hafa verið boðið í repo ([sjá leiðbeiningar](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)). Notendanöfn þeirra eru:
+Skilaboð skulu innihalda slóð á Heroku og slóð á GitHub repo fyrir verkefni, og dæmatímakennurum skal hafa verið boðið í repo ([sjá leiðbeiningar](https://docs.github.com/en/free-pro-team@latest/github/setting-up-and-managing-your-github-user-account/inviting-collaborators-to-a-personal-repository)). Notendanöfn þeirra eru:
 
 * `jonnigs`
 * `mimiqkz`
