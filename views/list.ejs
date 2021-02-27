@@ -1,2 +1,37 @@
 
+<section class="registrations">
+  <h2 class="registrations__title">Undirskriftir</h2>
+    <p class= "totalRows"> Fjöldi undirskrifta: <%= total.rows[0].count%></p>
+  <% if (registrations.length === 0) { %>
+    <p class="registrations__empty">Engar undirskriftir.</p>
+  <% } else { %>
+    <table class="registrations__table" cellpadding="0">
+      <tr>
+        <th>Dags</th>
+        <th>Nafn</th>
+        <th>Athugasemd</th>
+        <% if (locals.user) { %>
+          <th>Eyða</th>
+        <% } %>
+      </tr>
+      <% registrations.forEach((row) => { %>
+        <tr>
+          <td class="date"><%= formatDate(row.signed) %></td>
+          <td class="name"><%= row.anonymous ? 'Nafnlaust' : row.name %></td>
+          <td class="comment"><%= row.comment %></td>
+
+          <% if (locals.user) { %>
+            <td>
+              <form method="post" action="/admin/delete">
+                <input type="hidden" name="id" value="<%= row.id %>">
+                <button class="button__delete">Eyða</button>
+              </form>
+            </td>
+          <% } %>
+        </tr>
+      <% }) %>
+      </tr>
+    </table>
+  <% } %>
+</section>
 

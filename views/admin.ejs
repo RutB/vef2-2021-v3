@@ -1,8 +1,21 @@
 <%- include('header') -%>
 
 <h1>Undir&shy;skriftar&shy;listi — umsjón</h1>
-
+<div class="admin">
+    <div class="admin__field">
+        <p>Innskráður sem: </p>
+        <p class="admin__name"> <%= locals.user.username %></p>
+    </div>
+    <% if (formData.page > 1) { %>
+        <a href="logout">Útskrá</a>
+      <% }
+      else { %>
+        <a href="admin/logout">Útskrá</a>
+      <% } %>
+</div>
 
 <%- include('list') -%>
 
 <%- include('footer') -%>
+
+

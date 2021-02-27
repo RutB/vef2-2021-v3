@@ -2,8 +2,24 @@
 
 <h1>Innskráning</h1>
 
+<form class="form" method="post" action="/admin/login">
+  <div class="field">
+      <label >Nafn*</label>
+      <input type="text" name="username" id="username" >
 
+    </div>
+    <div class="field">
+      <label>Lykilorð*</label>
+      <input type="password" name="password" id="password" >
+    </div>
+      <button>Innskrá</button>
+  </form>
 
+  <% if (message) { %>
+    <div class="errors">
+      <p><%= message %></p>
+    </div>
+  <% } %>
 <a href="/">Til baka</a>
 
-<%- include('footer') -%>
+
