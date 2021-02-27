@@ -20,7 +20,7 @@ async function strat(username, password, done) {
 
     return done(null, result ? user : false);
   } catch (err) {
-    // console.error(err);
+     console.error(err);
     return done(err);
   }
 }
